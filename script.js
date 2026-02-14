@@ -69,4 +69,13 @@ function next(){
     for (let i = 0; i < memberppl.length; i++){
         memberppl[i].style.opacity = "1";
     }
+
+    let bot = document.getElementsByClassName("bot");
+    for (let i = 0; i < bot.length; i++){
+        bot[i].style.opacity = "1";
+    }
+    let bots = document.getElementById("bots");
+    bots.style.opacity = "1";
+
+    
 }
