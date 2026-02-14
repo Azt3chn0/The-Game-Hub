@@ -18,15 +18,18 @@ document.addEventListener("DOMContentLoaded", function(){
     let nextPage = document.getElementById("nextPage");
 
     nextPage.style.opacity = "1";
-
-
 });
 function next(){
     let box = document.getElementById("box");
     box.style.top = "500px";
 
+    let nextPage1 = document.getElementById("nextPage1");
+    nextPage1.style.opacity = "1";
+
     let title = document.getElementById("title");
     title.style.top = "-100px";
+
+    document.getElementById("nextPage").disabled = true;
 
     let firstPage = document.querySelectorAll(".firstPage");
     firstPage.forEach(el => el.style.opacity = "0");
@@ -85,8 +88,7 @@ function next(){
 
     let previousPage = document.getElementById("previousPage");
     previousPage.style.opacity = "1";
-
-    
+  
 }
 function previous(){
     let box = document.getElementById("box");
@@ -94,12 +96,17 @@ function previous(){
     let title = document.getElementById("title");
     title.style.top = "40px";
 
+    let nextPage1 = document.getElementById("nextPage1");
+    nextPage1.style.opacity = "0";
+
     let firstPage = document.querySelectorAll(".firstPage");
     firstPage.forEach(el => el.style.opacity = "1");
 
     let TitleMembers = document.getElementById("titleMembers");
     TitleMembers.style.opacity = "0";
     TitleMembers.style.top = "-100px";
+
+    document.getElementById("nextPage").disabled = false;
 
     let hr1 = document.getElementById("hr1");
     hr1.style.opacity = "0";
@@ -151,5 +158,56 @@ function previous(){
 
     let previousPage = document.getElementById("previousPage");
     previousPage.style.opacity = "0";
+
+    let gamesweplay = document.getElementById("gamesweplay");
+    gamesweplay.style.opacity = "0";
+    gamesweplay.style.top = "-100px";
+
+}
+function next1(){
+    let titleMembers = document.getElementById("titleMembers");
+    titleMembers.style.opacity = "0";
+
+    let hr1 = document.getElementById("hr1");
+    hr1.style.opacity = "0";
+
+    let owners = document.getElementById("Owners");
+    owners.style.opacity = "0";
+
+    let lionclad = document.getElementById("lionclad");
+    lionclad.style.opacity = "0";
+
+    let autumn = document.getElementById("autumn_i_guess");
+    autumn.style.opacity = "0";
+
+    let why = document.getElementById("why");
+    why.style.opacity = "0";
+
+    let mods = document.getElementById("mods");
+    mods.style.opacity = "0";
+
+    let mod = document.getElementsByClassName("mods");
+    for (let i = 0; i < mod.length; i++){
+        mod[i].style.opacity = "0";
+    }
+    
+    let member = document.getElementById("member");
+    member.style.opacity = "0";
+
+    let members = document.getElementsByClassName("member");
+    for (let i = 0; i < members.length; i++){
+        members[i].style.opacity = "0";
+    }
+
+    let bots = document.getElementById("bots");
+    bots.style.opacity = "0";
+
+    let bot = document.getElementsByClassName("bot");
+    for (let i = 0; i < bot.length; i++)
+        bot[i].style.opacity = "0";
+
+    let gamesweplay = document.getElementById("gamesweplay");
+    gamesweplay.style.opacity = "1";
+    gamesweplay.style.top = "0px";
 
 }
