@@ -194,7 +194,7 @@ body{
     position: absolute;
     opacity: 0;
     top: 15%;
-    left: 55%;
+    left: 69.5%;
     color: white;
     text-shadow: 0 0 5px white;
     font-size: 3em;
@@ -381,4 +381,72 @@ body{
     position: absolute;
     top: 50%;
     left: 85%;
+}
+#bots{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    opacity: 0;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 5px white;
+    font-size: 3em;
+    transition: all 1s ease;   
+}
+.bot{
+    color: white;
+    opacity: 0;
+    text-shadow: 0 0 5px white;
+    font-size: 2em;
+    transition: all 1s ease;
+}
+#fmbot{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+#arcane{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+#birthdaybot{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+#captchabot{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+#carlbot{
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}
+#emoji{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+#makeit{
+    position: absolute;
+    top: 55%;
+    left: 40%;
+}
+#maki{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+#medal{
+    position: absolute;
+    top: 65%;
+    left: 40%;
+}
+#sesh{
+    position: absolute;
+    top: 70%;
+    left: 40%;
 }
