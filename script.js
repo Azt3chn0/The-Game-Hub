@@ -22,6 +22,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
 });
 function next(){
+    let box = document.getElementById("box");
+    box.style.top = "500px";
+
+    let title = document.getElementById("title");
+    title.style.top = "-100px";
+
     let firstPage = document.querySelectorAll(".firstPage");
     firstPage.forEach(el => el.style.opacity = "0");
 
@@ -77,5 +83,73 @@ function next(){
     let bots = document.getElementById("bots");
     bots.style.opacity = "1";
 
+    let previousPage = document.getElementById("previousPage");
+    previousPage.style.opacity = "1";
+
     
+}
+function previous(){
+    let box = document.getElementById("box");
+    box.style.top = "20%";
+    let title = document.getElementById("title");
+    title.style.top = "40px";
+
+    let firstPage = document.querySelectorAll(".firstPage");
+    firstPage.forEach(el => el.style.opacity = "1");
+
+    let TitleMembers = document.getElementById("titleMembers");
+    TitleMembers.style.opacity = "0";
+    TitleMembers.style.top = "-100px";
+
+    let hr1 = document.getElementById("hr1");
+    hr1.style.opacity = "0";
+
+    let owners = document.getElementById("Owners");
+    owners.style.opacity = "0";
+
+    let lionclad = document.getElementById("lionclad");
+    lionclad.style.opacity = "0";
+
+    let autumn = document.getElementById("autumn_i_guess");
+    autumn.style.opacity = "0";
+
+    let why = document.getElementById("why");
+    why.style.opacity = "0";
+
+    let mods = document.getElementById("mods");
+    mods.style.opacity = "0";
+
+    let aztechno  = document.getElementById("aztechno");
+    aztechno.style.opacity = "0";
+    let nobody = document.getElementById("nobody");
+    nobody.style.opacity = "0";
+    let ember = document.getElementById("ember");
+    ember.style.opacity = "0";
+    let aliza = document.getElementById("aliza");
+    aliza.style.opacity = "0";
+    let piggycore99 = document.getElementById("piggycore99");
+    piggycore99.style.opacity = "0";
+    let itsmeowyn35 = document.getElementById("itsmeowyn35");
+    itsmeowyn35.style.opacity = "0";
+    let sleigh_apeal = document.getElementById("sleigh_apeal");
+    sleigh_apeal.style.opacity = "0";
+
+    let member = document.getElementById("member");
+    member.style.opacity = "0";
+
+    let memberppl = document.getElementsByClassName("member");
+    for (let i = 0; i < memberppl.length; i++){
+        memberppl[i].style.opacity = "0";
+    }
+
+    let bot = document.getElementsByClassName("bot");
+    for (let i = 0; i < bot.length; i++){
+        bot[i].style.opacity = "0";
+    }
+    let bots = document.getElementById("bots");
+    bots.style.opacity = "0";
+
+    let previousPage = document.getElementById("previousPage");
+    previousPage.style.opacity = "0";
+
 }
